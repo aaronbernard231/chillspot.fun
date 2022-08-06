@@ -239,11 +239,11 @@ sup {
 }
 
 a {
-  color: #64a19d;
+  color: ##5e295d;
   text-decoration: underline;
 }
 a:hover {
-  color: #50817e;
+  color: #5e295d;
 }
 
 a:not([href]):not([class]), a:not([href]):not([class]):hover {
@@ -2037,7 +2037,7 @@ progress {
   --bs-table-hover-bg: #cfdad9;
   --bs-table-hover-color: #000;
   color: #000;
-  border-color: #cad4d4;
+  border-color: #d2cad4;
 }
 
 .table-secondary {
@@ -2049,7 +2049,7 @@ progress {
   --bs-table-hover-bg: #d2cfda;
   --bs-table-hover-color: #000;
   color: #000;
-  border-color: #cccad4;
+  border-color: #d2cad4;
 }
 
 .table-success {
@@ -2061,7 +2061,7 @@ progress {
   --bs-table-hover-bg: #d0e1d9;
   --bs-table-hover-color: #000;
   color: #000;
-  border-color: #cbdbd4;
+  border-color: #dbcbda;
 }
 
 .table-info {
@@ -2073,7 +2073,7 @@ progress {
   --bs-table-hover-bg: #c2dce1;
   --bs-table-hover-color: #000;
   color: #000;
-  border-color: #bdd6db;
+  border-color: #d2cad4;
 }
 
 .table-warning {
@@ -2103,24 +2103,24 @@ progress {
 .table-light {
   --bs-table-bg: #f8f9fa;
   --bs-table-striped-bg: #ecedee;
-  --bs-table-striped-color: #000;
+  --bs-table-striped-: #000;
   --bs-table-active-bg: #dfe0e1;
-  --bs-table-active-color: #000;
+  --bs-table-active-: #000;
   --bs-table-hover-bg: #e5e6e7;
-  --bs-table-hover-color: #000;
-  color: #000;
-  border-color: #dfe0e1;
+  --bs-table-hover-: #000;
+  : #000;
+  border-: #dfe0e1;
 }
 
 .table-dark {
   --bs-table-bg: #212529;
   --bs-table-striped-bg: #2c3034;
-  --bs-table-striped-color: #fff;
+  --bs-table-striped-: #fff;
   --bs-table-active-bg: #373b3e;
-  --bs-table-active-color: #fff;
+  --bs-table-active-: #fff;
   --bs-table-hover-bg: #323539;
-  --bs-table-hover-color: #fff;
-  color: #fff;
+  --bs-table-hover-: #fff;
+  : #fff;
   border-color: #373b3e;
 }
 
@@ -3034,17 +3034,17 @@ textarea.form-control-lg {
 
 .btn-primary {
   color: #fff;
-  background-color: #64a19d;
+  background-color: #875486;
   border-color: #64a19d;
 }
 .btn-primary:hover {
   color: #fff;
-  background-color: #558985;
+  background-color: #4d2f4c;
   border-color: #50817e;
 }
 .btn-check:focus + .btn-primary, .btn-primary:focus {
   color: #fff;
-  background-color: #558985;
+  background-color: #4d2f4c;
   border-color: #50817e;
   box-shadow: 0 0 0 0.25rem rgba(123, 175, 172, 0.5);
 }
@@ -11769,7 +11769,7 @@ body {
   letter-spacing: 0.15rem;
 }
 .contact-section .card hr {
-  border-color: #64a19d;
+  border-color: #fff;
   border-width: 0.25rem;
   width: 3rem;
 }
