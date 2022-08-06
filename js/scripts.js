@@ -5,7 +5,7 @@
 */
 //
 // Scripts
-// 
+//
 
 window.addEventListener('DOMContentLoaded', event => {
 
@@ -23,7 +23,7 @@ window.addEventListener('DOMContentLoaded', event => {
 
     };
 
-    // Shrink the navbar 
+    // Shrink the navbar
     navbarShrink();
 
     // Shrink the navbar when page is scrolled
@@ -37,7 +37,20 @@ window.addEventListener('DOMContentLoaded', event => {
             offset: 74,
         });
     };
+    var url = "https://api.minetools.eu/ping/chillspot.serv.gs/";
 
+    $.getJSON(url, function(r) {
+        //data is the JSON string
+     if(r.error){
+        $('#rest').html('Server Offline');
+       return false;
+     }
+    var pl = '';
+     if(r.players.sample.length > 0 ){ pl = '<br>OP: '+r.players.sample[0].name;  }
+      $('#rest').html(r.description.replace(/§(.+?)/gi, '')+'<br><b>Players Online:</b> '+r.players.online+pl);
+     $('#favicon').attr('src', r.favicon);
+
+    });
     // Collapse responsive navbar when toggler is visible
     const navbarToggler = document.body.querySelector('.navbar-toggler');
     const responsiveNavItems = [].slice.call(
